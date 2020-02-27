@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "device.scss",
+        "colors.scss"
+    ],
+    "names": [],
+    "file": "device.css"
+}

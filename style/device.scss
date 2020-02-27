@@ -1,0 +1,589 @@
+@import "colors.scss";
+
+@mixin tablets {
+    @media only screen and(max-width: 993px){
+
+        .header {
+            .width {
+                .miniContainer {
+                    .logo {
+                        color: $black;
+                    }
+
+                    .miniMenu {
+                        color: rgba(0, 0, 0, 0.5);
+
+                        .burger {
+                            &__item {
+                                background: rgba(0, 0, 0, 0.5);
+                            }
+                        }
+                    }
+                }
+                .menu {
+                    &__item {
+                        a {
+                            color: $black;
+                        }
+
+                        &--cart {
+                            padding: 0 20px;
+                            a {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        header {
+            background: $black;
+            padding: 15px 0px;
+
+            .width {
+                flex-direction: column;
+                
+                .miniContainer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    .logo {
+                        color: $white;
+                    }
+
+                    .miniMenu {
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                        font-weight: 100;
+                        color: rgba(255, 255, 255, 0.5);
+
+                        .burger {
+                            width: 16px;
+                            margin-right: 5px;
+    
+                            &__item {
+                                height: 2px;
+                                margin: 3px 0;
+                                border-radius: 2px;
+                                background: rgba(255, 255, 255, 0.5);
+                            }
+                        }
+
+                    }
+
+                }
+
+                .open {
+                    height: 280px !important;
+                }
+
+                .menu {
+                    flex-direction: column;
+                    align-items: baseline;
+                    height: 0px;
+                    overflow: hidden;
+                    width: 100%;
+                    transition: all 0.3s;
+
+                    &__item {
+                        padding: 15px 20px;
+
+                        &--cart {
+                            width: 100%;
+
+                            a {
+                                color: $white;
+                                background: $coral;
+                                display: block;
+                                height: 45px;
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+
+                        a {
+                            color: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .main {
+            .one {
+                .home {
+                    &__text {
+                        display: none;
+                    }
+                    &__image {
+                        width: 100%;
+
+                        .content {
+                            display: flex;
+                            height: 100%;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0 15px;
+
+                            &__top {
+                                font-weight: 300;
+                                font-size: 12px;
+                                letter-spacing: 4px;
+                                text-transform: uppercase;
+                                display: inline-block;
+                                color: $white;
+                                margin-top: -13px;
+                            }
+
+                            &__title {
+                                color: $white;
+                                font-size: 50px;
+                                line-height: 1.3;
+                                font-weight: 300;
+                                margin-top: 16px;
+                                margin-bottom: 25px;
+
+                                span {
+                                    font-weight: 900;
+                                }
+                            }
+
+                            &__text {
+                                color: #b3b3b3;
+                                font-size: 23px;
+                                text-align: center;
+                                margin-bottom: 55px;
+                            }
+
+                            a {
+                                background: $coral;
+                                color: $white;
+                                border-radius: 30px;
+                                padding: 16px 46px;
+                                cursor: pointer;
+                                border: 1px solid transparent;
+                                box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+                                transition: all .2s ease-in-out;
+                                margin-left: 0px;
+        
+                                &:hover {
+                                    background: $white;
+                                    border: 1px solid $coral;
+                                    color: $coral;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .two {
+                .width {
+
+                    .video {
+                        width: 88%;
+                    }
+
+                    .content {
+                        padding: 50px 15px 50px 40px;
+                        .items {
+                            flex-direction: column;
+
+                            &__item {
+                                width: 100%;
+                                margin-bottom: 40px;
+                                padding: 0 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .three, .five {
+                .width {
+                    .container {
+                        .product {
+                            &__title {
+                                .add {
+                                    font-size: 11px;
+                                    padding: 10px 5px;
+                                    left: 5px;
+                                }
+
+                                .buy {
+                                    font-size: 11px;
+                                    padding: 10px 5px;
+                                    right: 5px;
+                                }
+                                .add, .buy {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .four {
+                .width {
+                    .women {
+                        &__image {
+                            img {
+                                height: 100%;
+                            }
+                        }
+                        &__text {
+                            max-width: 213px;
+                            padding: 50px 15px;
+                            margin-left: 0px;
+                        }
+                    }
+                    .men {
+                        justify-content: space-between;
+                        &__text {
+                            padding: 0 15px;
+                            max-width: 390px;
+                        }
+                        &__image {
+                            max-width: 320px;
+                            margin-top: 0px;
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            .blog {
+                .width {
+                    flex-direction: column;
+                    .container2 {
+                        max-width: fit-content;
+                        > div {
+                            form {
+                                input {
+                                    min-width: auto;
+                                }
+                            }
+                        }
+
+                        .recent {
+                            ul {
+                                li {
+                                    justify-content: flex-start;
+                                    div {
+                                        max-width: fit-content;
+                                        width: fit-content;
+                                        margin-left: 25px;
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .paragraph {
+                            p {
+                                padding-right: 50px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        footer {
+            .width {
+                .container {
+                    flex-wrap: wrap;
+                    width: 765px;
+                    justify-content: space-around;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    &__item {
+                        &:nth-of-type(3), &:nth-of-type(4) {
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin phone {
+    @media only screen and(max-width: 768px){
+       
+        .width {
+            flex-direction: column;
+            max-width: 540px;
+        }
+
+        .main {
+           
+            .two {
+                .width {
+
+                    .video {
+                        width: 100%;
+                        min-height: 300px;
+                        max-width: inherit;
+                    }
+
+                    .content {
+                        padding: 0px;
+                        
+                        .items {
+                            &__item {
+                                p {
+                                    padding: 0px 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .three, .five {
+                .width {
+                    .container {
+                        flex-wrap: wrap;
+
+                        .product {
+                            margin: 0;
+                            margin-bottom: 40px;
+
+                            &__title {
+
+                                .add {
+                                    padding: 10px 6px;
+                                    font-size: 13px;
+                                    left: 16px;
+                                }
+    
+                                .buy {
+                                    padding: 10px 16px;
+                                    font-size: 13px;
+                                    right: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .four {
+                .width {
+                    .women {
+                        flex-direction: column;
+                        padding: 0 15px;
+                        &__text {
+                            max-width: fit-content;
+                        }
+                        &__image {
+                            height: 350px;
+                        }
+                    }
+                    .men {
+                        flex-direction: column;
+                        padding: 0 15px;
+                        &__text {
+                            max-width: fit-content;
+                            order: 2;
+                        }
+                        &__image {
+                            height: 350px;
+                            max-width: fit-content;
+                            order: 1;
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+            }
+
+            .six {
+                height: 625px;
+                flex-direction: column;
+
+                .item {
+                    margin: 18px 0px;
+                }
+            }
+
+            .seven {
+                padding: 0 15px;
+                .width {
+                    h2 {
+                        font-size: 28px;
+                        margin-bottom: 25px;
+                    }
+                    .slider {
+                        &__item {
+                            padding: 0 25px;
+                        }
+                    }
+                }
+            }
+
+            .eight {
+
+                h2 {
+                    width: 100%;
+                    max-width: 300px;
+                    margin: 0 auto 50px;
+                }
+
+                form {
+                    input {
+                        width: 115px;
+                    }
+                }
+            }
+
+            .contact {
+                padding: 0 15px;
+                .width {
+                    .container, .container2 {
+                        flex-direction: column;
+                    }
+
+                    .container2 {
+                        .map {
+                            order: 2;
+                            height: 300px;
+                            margin-top: 50px;
+                        }
+
+                        .input {
+                            order: 1;
+                        }
+                    }
+                }
+            }
+
+            .blog {
+                .width {
+                    .container {
+
+                        &__item {
+                            flex-direction: column;
+                            padding: 0px 15px;
+
+                            .image {
+                                height: 300px;
+                                max-width: inherit;
+                            }
+
+                            .content {
+                                padding: 0px;
+                                padding-top: 15px;
+                            }
+                        }
+                    }
+
+                    .container2 {
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+
+        footer {
+            .width {
+                .container {
+                    flex-direction: column;
+                    width: 100%;
+
+                    &__item {
+                        margin-top: 35px;
+                        width: 100%;
+
+                        &:first-child {
+                            margin-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@mixin sphone {
+    @media only screen and(max-width: 576px){
+
+        .width {
+            margin: 0;
+            width: 100%;
+            max-width: inherit;
+        }
+
+        header {
+            padding: 20px 0px;
+
+            .width {
+                width: 95%;
+                margin: 0 auto;
+            }
+        }
+       
+        .main {
+            .two {
+                .width {
+
+                    .content {
+
+                        &__title {
+                            padding-left: 5px;
+                        }
+
+                        &__text {
+                            padding: 0 10px;
+                        }
+
+                        .items {
+
+                            &__item {
+                                padding: 0px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .three, .five {
+                .width {
+                    .container {
+                        justify-content: center;
+
+                        .product {
+                            width: 95%;
+                            max-width: 570px;
+                        }
+                    }
+                }
+            }
+
+            .blog {
+                .width {
+                    .container2 {
+                        .recent {
+                            ul {
+                                li {
+                                    div {
+                                        width: calc(100% - 100px)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
